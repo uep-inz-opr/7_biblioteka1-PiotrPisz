@@ -42,7 +42,7 @@ n = int(n)
 for i in range(n):
     x = eval(input())
     Egzemplarz(x[0],x[1],x[2])
-sorted(Ksiazka.ksiazki, key=lambda x: x[0], reverse=True)
+Ksiazka.ksiazki = sorted(Ksiazka.ksiazki, key=lambda x: x[0])
 for i in range(len(Ksiazka.ksiazki)):
     print(Ksiazka(Ksiazka.ksiazki[i][0],Ksiazka.ksiazki[i][1],Ksiazka.ksiazki[i][2]))
 
